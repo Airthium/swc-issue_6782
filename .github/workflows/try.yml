@@ -1,0 +1,28 @@
+name: Try
+
+on: push
+
+jobs:
+  linux:
+    name: try on linux
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@master
+      - name: Install
+        run: yarn
+      - name: Build
+        run: yarn workflow
+
+  windows:
+    name: try on windows
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@master
+      - name: Install
+        run: yarn
+      - name: Build
+        run: yarn workflow
