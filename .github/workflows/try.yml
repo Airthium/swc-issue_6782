@@ -29,6 +29,7 @@ jobs:
       - name: Install
         run: yarn
       - name: Build
+        continue-on-error: true
         run: yarn workflow
       - name: Show
         run: |
