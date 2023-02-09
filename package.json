@@ -2,8 +2,8 @@
   "name": "SWC_issue-6782",
   "type": "module",
   "scripts": {
-    "build": "swc index.tsx --out-dir dist && swc config --out-dir dist/config",
-    "start": "node --experimental-specifier-resolution=node dist/index.js",
+    "build": "swc src --out-dir dist/src && swc config --out-dir dist/config",
+    "start": "node --experimental-specifier-resolution=node dist/src/index.js",
     "workflow": "yarn build && yarn start"
   },
   "dependencies": {
