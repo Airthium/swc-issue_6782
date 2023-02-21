@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@swc/cli": "0.1.61",
-    "@swc/core": "1.3.32"
+    "@swc/core": "1.3.36"
   },
   "packageManager": "yarn@3.4.1"
 }
